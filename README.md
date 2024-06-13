@@ -38,6 +38,13 @@ To kickstart your crew of AI agents and begin task execution, run this from the 
 poetry run newsletter_gen
 ```
 
+```bash
+pip install streamlit
+pip install python-dotenv
+
+streamlit run src/gui/app.py
+```
+
 This command initializes the newsletter-gen Crew, assembling the agents and assigning them tasks as defined in your configuration.
 
 This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folser

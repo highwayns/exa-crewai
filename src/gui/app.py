@@ -1,6 +1,9 @@
 import streamlit as st
+from dotenv import load_dotenv
+import sys
+# 添加模块路径
+sys.path.append('src/')
 from newsletter_gen.crew import NewsletterGenCrew
-
 
 class NewsletterGenUI:
 
@@ -79,4 +82,5 @@ class NewsletterGenUI:
 
 
 if __name__ == "__main__":
+    load_dotenv()
     NewsletterGenUI().render()
